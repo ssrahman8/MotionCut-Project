@@ -1,3 +1,4 @@
+ # Secure Password Generator
 import secrets
 import string
 
@@ -15,7 +16,7 @@ def main():
         password_length = int(input("Enter the length of each password: "))
 
         if num_passwords <= 0 or password_length <= 0:
-            raise ValueError("Number of passwords and password length must be positive integers.")
+            raise ValueError("Number of passwords and password length must be in positive integers.")
 
         print("\nGenerated Passwords:")
         for _ in range(num_passwords):
